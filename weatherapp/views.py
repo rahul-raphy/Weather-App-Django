@@ -8,7 +8,7 @@ def index(request):
     else:
         city = 'Kochi'
 
-    appid = 'da68a5d693075ccb4df8467c952fbbf6'  #You need to enter your openweathermap API KEY here
+    appid = ''  #You need to enter your openweathermap API KEY here
     PARAMS = {'q':city,'appid':appid,'units':'metric'}
     URL = 'https://api.openweathermap.org/data/2.5/weather'
     r = requests.get(URL,PARAMS)
